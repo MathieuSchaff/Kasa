@@ -22,7 +22,9 @@ const Accordion = ({title, content}) => {
         >
           <div className="pcontainer">
             {Array.isArray(content) ? (
-              content.map(equipement => <p> {equipement}</p>)
+              content.map((equipement, index) => (
+                <p key={index}> {equipement}</p>
+              ))
             ) : (
               <p>{content}</p>
             )}

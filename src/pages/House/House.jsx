@@ -22,8 +22,8 @@ const House = () => {
               <h2 className="house-title">{data.title}</h2>
               <p className="house-location">{data.location}</p>
               <div className="house-tags">
-                {data.tags.map(tag => (
-                  <div className="house-tag">
+                {data.tags.map((tag, index) => (
+                  <div className="house-tag" key={index}>
                     <p className="house-tag-text">{tag}</p>
                   </div>
                 ))}

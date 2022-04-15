@@ -5,7 +5,7 @@ const HomeOwnerName = ({name}) => {
   return (
     <h3 className="house-owner-name">
       {splitedName.map((wordsplit, index) => (
-        <span style={{display: 'block'}}>
+        <span style={{display: 'block'}} key={index}>
           {wordsplit}
           {index !== splitedName.length - 1 ? <br></br> : null}
         </span>

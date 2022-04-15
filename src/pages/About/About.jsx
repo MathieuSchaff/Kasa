@@ -8,8 +8,8 @@ const About = () => {
     <div>
       <BannerAbout />
       <div className="accordion-about-container">
-        {content.map(about => (
-          <Accordion title={about.title} content={about.content} />
+        {content.map((about, index) => (
+          <Accordion title={about.title} content={about.content} key={index} />
         ))}
       </div>
     </div>

@@ -10,6 +10,7 @@ const Rating = ({rating}) => {
       {array.map((object, index) => {
         return (
           <FontAwesomeIcon
+            key={index}
             icon={faStar}
             className={index < numberRating ? 'goodrate' : 'badrate'}
           />

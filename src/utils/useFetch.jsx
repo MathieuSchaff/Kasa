@@ -2,7 +2,6 @@ import {useEffect, useState} from 'react'
 import getHouse from './getHouse'
 import {useNavigate} from 'react-router-dom'
 export function useFetch(url, option) {
-  console.log('enter usefetch:')
   const [data, setData] = useState(null)
   const navigate = useNavigate()
   const [isLoading, setLoading] = useState(true)
