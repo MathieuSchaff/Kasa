@@ -1,0 +1,34 @@
+@import '../../sass/variables';
+@import '../../sass/mixins';
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 3rem;
+}
+.logo {
+  height: 35px;
+}
+
+.navbar-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.navbar-links {
+  text-decoration: none;
+  color: $primary-color;
+  font-size: $font-heading-3;
+  font-weight: $font-weight-medium;
+  margin-left: 6rem;
+  border-bottom: 2px solid rgba(255, 96, 96, 0);
+  -webkit-background-clip: padding-box; /* for Safari */
+  background-clip: padding-box;
+  transition: border 0.2s ease-in-out;
+  @include respond(phone) {
+    margin-left: 2rem;
+  }
+  &--active {
+    border-bottom: 2px solid rgba(255, 96, 96, 1);
+  }
+}

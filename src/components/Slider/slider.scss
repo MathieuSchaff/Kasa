@@ -1,0 +1,65 @@
+@import '../../sass/mixins';
+@import '../../sass/mixins';
+.slider {
+  position: relative;
+  height: 415px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  @include respond(phone) {
+    height: 255px;
+  }
+}
+.imageSlider {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+.rightArrow {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 10;
+  transition: all 0.3s ease;
+  @include respond(phone) {
+    right: 5px;
+  }
+}
+
+.leftArrow {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 10;
+  transition: all 0.3s ease;
+  @include respond(phone) {
+    left: 5px;
+  }
+}
+.arrow {
+  @include respond(phone) {
+    width: 15px;
+  }
+}
+.slide {
+  opacity: 0;
+  transition-duration: 1s ease;
+  height: 100%;
+}
+.slide.active {
+  width: 100%;
+  opacity: 1;
+  transition-duration: 1s;
+}

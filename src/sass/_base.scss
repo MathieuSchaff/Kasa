@@ -30,18 +30,35 @@ html {
     font-size: 75%; // 1rem = 12px; 12/16 = 75%
   }
 }
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
 
+li {
+  list-style-type: none;
+}
 body {
-  font-family: $font-primary;
   font-weight: $font-weight-regular;
   line-height: $font-line-height-body;
   font-size: $font-size-body;
   background-color: $white-color;
   color: $dark-grey;
+  margin: 0;
+  font-family: Montserrat, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 
   @include respond(tab-land) {
   }
 
   @include respond(phone) {
   }
+}
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow: hidden;
 }

@@ -1,0 +1,10 @@
+@import './sass/mixins';
+.App {
+  margin: 0 100px;
+  @include respond(tab-port) {
+    margin: 0 50px;
+  }
+  @include respond(phone) {
+    margin: 0 1rem;
+  }
+}

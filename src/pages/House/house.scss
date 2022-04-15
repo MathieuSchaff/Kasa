@@ -1,0 +1,78 @@
+@import '../../sass/variables';
+@import '../../sass/mixins';
+.house {
+  &-main {
+    margin: 2rem 0;
+    font-weight: $font-weight-medium;
+  }
+  &-title {
+    font-size: $font-heading-2;
+    font-weight: $font-weight-bold;
+    color: $primary-color;
+  }
+  &-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
+    @include respond(phone) {
+      flex-direction: column;
+    }
+  }
+  &-location {
+    font-size: $font-size-body;
+    font-weight: $font-weight-medium;
+    color: $primary-color;
+  }
+  &-tags {
+    margin-top: 20px;
+  }
+  &-tag {
+    background-color: $primary-color;
+    color: $white-color;
+    font-size: $font-size-element;
+    padding: 3px 20px;
+    border-radius: 10px;
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+  }
+  &-starContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    svg {
+      padding: 2px;
+    }
+  }
+}
+.house-owner {
+  display: flex;
+  align-items: center;
+  &-picture {
+    border-radius: 50%;
+    width: 64px;
+    height: 64px;
+    @include respond(phone) {
+      width: 45px;
+      height: 45px;
+    }
+  }
+  &-name {
+    display: flex;
+    flex-direction: column;
+    margin-right: 10px;
+    color: $primary-color;
+    font-weight: $font-weight-medium;
+  }
+}
+.house-secBlock {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  @include respond(phone) {
+    flex-direction: row-reverse;
+    align-content: center;
+    margin-top: 17px;
+  }
+}

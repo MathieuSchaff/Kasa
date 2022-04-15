@@ -1,0 +1,56 @@
+@import '../../sass/variables';
+@import '../../sass/mixins';
+.banner-img {
+  @include respond(phone) {
+  }
+}
+.banner {
+  width: 100%;
+  border-radius: 25px;
+  margin-top: 6rem;
+
+  height: 223px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  &-home {
+    background: rgba(0, 0, 0, 0.3) url('../../assets/BannerHome-large.png');
+    background-blend-mode: darken;
+    background-repeat: no-repeat;
+    background-size: cover;
+    @include respond(phone) {
+      background-image: url('../../assets/BannerHome-small.png');
+      border-radius: 10px;
+      margin-top: 2rem;
+      height: 111px;
+      align-items: center;
+      justify-content: start;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+  }
+  &-about {
+    background: rgba(0, 0, 0, 0.3) url('../../assets/BannerAbout-large.png');
+    background-blend-mode: darken;
+    background-repeat: no-repeat;
+    background-size: cover;
+    @include respond(phone) {
+      background-image: url('../../assets/BannerAbout-small.png');
+      border-radius: 10px;
+      margin-top: 2rem;
+      align-items: center;
+      justify-content: start;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+  }
+  p {
+    color: $white-color;
+    font-size: $font-heading-1;
+    font-weight: $font-weight-medium;
+    @include respond(phone) {
+      font-size: $font-heading-2;
+      padding: 1rem 1rem 1rem 3rem;
+    }
+  }
+}
