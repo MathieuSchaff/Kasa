@@ -14,10 +14,11 @@
   }
   figcaption {
     position: absolute;
-    bottom: 0;
-    left: 0;
+    bottom: 5px;
+    left: 5px;
     right: 0;
-    background: rgba(0, 0, 0, 0.5);
+    font-size: 1.8rem;
     color: #fff;
+    font-weight: 500;
   }
 }
