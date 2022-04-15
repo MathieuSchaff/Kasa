@@ -1,6 +1,5 @@
 import React from 'react'
-import small from '../../assets/BannerHome-small.png'
-import large from '../../assets/BannerHome-large.png'
+
 import './banner.scss'
 import useWindowDimensions from '../../utils/useWindowDimensions'
 export const BannerHome = () => {

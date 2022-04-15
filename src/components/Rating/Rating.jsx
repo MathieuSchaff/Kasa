@@ -4,7 +4,6 @@ import {faStar} from '@fortawesome/free-solid-svg-icons'
 import './rating.scss'
 const Rating = ({rating}) => {
   const numberRating = parseInt(rating, 10)
-  console.log(numberRating)
   const array = ['a', 'b', 'c', 'd', 'e']
   return (
     <>
