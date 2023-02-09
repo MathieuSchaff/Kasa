@@ -7,5 +7,3 @@ C'est ma première app crée en react.
 ## Installation
 
 git clone puis npm start
-
-### Prérequis
