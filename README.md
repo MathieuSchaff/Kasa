@@ -13,8 +13,6 @@ Kasa offre les fonctionnalités suivantes :
 
     - Affichage de la liste des biens immobiliers disponibles
     - Affichage des détails de chaque bien immobilier
-    - Filtrage des biens en fonction de leur type, de leur prix ou de leur emplacement
-    - Formulaire de contact pour contacter l'agence immobilière
     - Design responsive pour une utilisation sur tous les types d'appareils
 
 ## Installation
